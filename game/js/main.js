@@ -37,7 +37,7 @@ class Canvas {
   drawActors(actors) {
     for (let actor of actors) {
       if (actor.type === "circle") {
-        this.drawCircle(actor);
+        this.drawCircle(actor); 
       }
     }
   }

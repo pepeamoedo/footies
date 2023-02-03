@@ -157,6 +157,7 @@ const display = new Canvas();
 const ball = new Ball();
 const actors = [ball];
 let state = new State(display, actors);
+
 runAnimation((time) => {
   state = state.update(time);
   display.sync(state);

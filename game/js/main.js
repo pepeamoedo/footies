@@ -54,7 +54,8 @@ class Vector {
    * and allows chaining. These properties are
    * extremely useful with the complex formulas
    * we'll be using.
-   **/
+  **/
+
   add(vector) {
     return new Vector(this.x + vector.x, this.y + vector.y);
   };
@@ -91,7 +92,8 @@ class State {
     /**
      * Provide an update ID to let actors
      * update other actors only once.
-     **/
+    **/
+   
     const updateId = Math.floor(Math.random() * 1000000);
     const actors = this.actors.map(actor => {
       return actor.update(this, time, updateId);

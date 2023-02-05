@@ -7,7 +7,12 @@ canvas.height = 576
 c.fillRect(0,0,canvas.width,canvas.height)
 
 class Sprite {
-    constructor(position){
-        
-    }
+  constructor(posicion) {
+    this.posicion = posicion;
+  }
 }
+
+const player = new Sprite({
+    x:0,
+    y:0
+})
